@@ -1,5 +1,5 @@
-import enUS from './en-US';
+import messages from './messages'
 
 export default {
-  'en-US': enUS
+  messages
 };

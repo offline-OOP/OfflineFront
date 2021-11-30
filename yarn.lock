@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@2gis/mapgl@^1.20.1":
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/@2gis/mapgl/-/mapgl-1.20.1.tgz#ea034edd570c4ddc72f25290394d1e3e453ce4f4"
+  integrity sha512-XsjbLyPSU+e+XKy/3Jqtu6yda0fRFEhqCIJkil63zsTWlCdwmVkj6/vYPScnbkZuSPrjWTiBEBL57eMpMnGNgA==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+
 "@apideck/better-ajv-errors@^0.2.4":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@apideck/better-ajv-errors/-/better-ajv-errors-0.2.6.tgz#f12e5176a04c84caade85100fa33317a1457f372"
@@ -1331,6 +1338,11 @@
     "@types/express-serve-static-core" "^4.17.18"
     "@types/qs" "*"
     "@types/serve-static" "*"
+
+"@types/geojson@^7946.0.7":
+  version "7946.0.8"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.8.tgz#30744afdb385e2945e22f3b033f897f76b1f12ca"
+  integrity sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.2"
@@ -5188,6 +5200,10 @@ qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+
+"quasar-app-extension-offline-ui@link:../offline-ui":
+  version "0.0.0"
+  uid ""
 
 quasar@^2.0.0:
   version "2.1.1"

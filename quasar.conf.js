@@ -9,6 +9,7 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { configure } = require('quasar/wrappers');
+const path = require('path')
 
 module.exports = configure(function (ctx) {
   return {
@@ -34,9 +35,7 @@ module.exports = configure(function (ctx) {
     ],
 
     // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: [
-      'app.css'
-    ],
+    css: [],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
@@ -74,8 +73,9 @@ module.exports = configure(function (ctx) {
 
       // https://v2.quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack (/* chain */) {
-        //
+      chainWebpack (config) {
+        config.resolve.alias.set( 'vue', path.resolve('./node_modules/vue'))
+        config.resolve.alias.set( 'vuex', path.resolve('./node_modules/vuex'))
       },
     },
 

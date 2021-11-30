@@ -6,7 +6,7 @@
   "author": "SemBystrov",
   "private": true,
   "scripts": {
-    "dev": "quasar dev -m ssr",
+    "dev": "quasar dev",
     "build:spa": "quasar build",
     "build:ssr": "quasar build -m ssr",
     "lint": "eslint --ext .js,.ts,.vue ./",
@@ -17,6 +17,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "quasar": "^2.0.0",
+    "quasar-app-extension-offline-ui": "link:../offline-ui",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-i18n": "^9.0.0",
     "vuex": "^4.0.1"
