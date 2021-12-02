@@ -78,9 +78,18 @@ module.exports = {
     'prefer-promise-reject-errors': 'off',
 
     // TypeScript
-    quotes: ['warn', 'single', { avoidEscape: true }],
+
+    'quotes': ['error', 'single'],
+    // we want to force semicolons
+    'semi': ['error', 'always'],
+    // we use 2 spaces to indent our code
+    'indent': ['error', 2],
+    // we want to avoid extraneous spaces
+    'no-multi-spaces': ['error'],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
 
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'

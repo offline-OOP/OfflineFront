@@ -9,7 +9,7 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { configure } = require('quasar/wrappers');
-const path = require('path')
+const path = require('path');
 
 module.exports = configure(function (ctx) {
   return {
@@ -74,8 +74,8 @@ module.exports = configure(function (ctx) {
       // https://v2.quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
       chainWebpack (config) {
-        config.resolve.alias.set( 'vue', path.resolve('./node_modules/vue'))
-        config.resolve.alias.set( 'vuex', path.resolve('./node_modules/vuex'))
+        config.resolve.alias.set( 'vue', path.resolve('./node_modules/vue'));
+        config.resolve.alias.set( 'vuex', path.resolve('./node_modules/vuex'));
       },
     },
 
@@ -116,10 +116,10 @@ module.exports = configure(function (ctx) {
       // manualPostHydrationTrigger: true,
 
       prodPort: 3000, // The default port that the production server should use
-                      // (gets superseded if process.env.PORT is specified at runtime)
+      // (gets superseded if process.env.PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
-        // Tell browser when a file from the server should expire from cache (in ms)
+      // Tell browser when a file from the server should expire from cache (in ms)
 
       chainWebpackWebserver (/* chain */) {
         //
@@ -225,5 +225,5 @@ module.exports = configure(function (ctx) {
         // extendWebpackPreload also available besides this chainWebpackPreload
       },
     }
-  }
+  };
 });

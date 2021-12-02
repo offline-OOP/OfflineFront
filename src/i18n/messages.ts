@@ -1,7 +1,7 @@
-import en from './en/messages'
-import ru from './ru/messages'
+import en from './en/messages';
+import ru from './ru/messages';
 
 
 export default {
-    en, ru
-}
+  en, ru
+};
