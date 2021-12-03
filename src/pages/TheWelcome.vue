@@ -1,15 +1,15 @@
 <template>
   <Page page-class="bg-background-default bg-no-repeat bg-cover">
-    <h1 class="o-logo text-white">OFFLINE</h1>
+    <h1 class="o-logo text-white">{{$t('global.appName')}}</h1>
 
     <router-link to="/sign-in">
-      <Btn color="white">Sign In</Btn>
+      <Btn color="white">{{$t('auth.signIn')}}</Btn>
     </router-link>
     <router-link to="/sign-up">
-      <Btn color="white" outlined>Sign Up</Btn>
+      <Btn color="white" outlined>{{$t('auth.signUp')}}</Btn>
     </router-link>
 
-    <p class="font-montserrat font-light text-sm text-white">all right reserved</p>
+    <p class="font-montserrat font-light text-sm text-white">{{$t('global.rightsReserved')}}</p>
   </Page>
 </template>
 

@@ -1,5 +1,6 @@
 export const en = {
   global: {
+    appName: 'OFFLINE',
     networkLost: 'network lost',
     rightsReserved: 'all rights reserved',
     next: 'next',
@@ -31,12 +32,11 @@ export const en = {
     signIn: 'sign in',
     signUp: 'sign up',
     messages: {
-      verifyAccount: 'an account verification link has been sent to your email address',
+      verifyAccount: 'An account verification link has been sent to your email address',
       loginNotMatch: 'login and password do not match',
       remindPassword: 'remind password'
     },
   },
-
   category: {
     item: 'category | categories',
     count: 'no category | category | categories'
@@ -130,6 +130,9 @@ export const en = {
     appName: 'nickname',
     email: 'email',
     password: 'password | passwords',
+  },
+  validate: {
+    notEmail: 'Incorrect email format'
   }
 };
 

@@ -7,23 +7,11 @@ const routes : RouteRecordRaw[] = [
   },
   {
     path: '/sign-in',
-    component: () => import('layouts/TheSign.vue'),
-    children: [
-      {
-        path: '',
-        component: () => import('pages/TheSignIn.vue')
-      }
-    ]
+    component: () => import('pages/TheSignIn.vue')
   },
   {
     path: '/sign-up',
-    component: () => import('layouts/TheSign.vue'),
-    children: [
-      {
-        path: '',
-        component: () => import('pages/TheSignUp.vue')
-      }
-    ]
+    component: () => import('pages/TheSignUp.vue')
   }
 ];
 

@@ -1,5 +1,6 @@
 export const ru = {
   global: {
+    appName: 'OFFLINE',
     networkLost: 'нет сети',
     rightsReserved: 'все права защищены',
     next: 'далее',
@@ -20,7 +21,6 @@ export const ru = {
   activity: {
     item: 'активность | активности',
     count: 'нет активностей | активность | активности | активностей',
-
     myProfile: 'мой профиль',
     newActivity: 'новые активности',
     seeAll: 'смотреть все',
@@ -31,7 +31,7 @@ export const ru = {
     signIn: 'войти',
     signUp: 'регистрация',
     messages: {
-      verifyAccount: 'ссылка для подтверждения аккаунта была' +
+      verifyAccount: 'Ссылка для подтверждения аккаунта была' +
                 ' отправлена на ваш адрес электронной почты',
       loginNotMatch: 'неверный логин или пароль',
       remindPassword: 'забыли пароль?'
@@ -127,6 +127,9 @@ export const ru = {
     appName: 'nickname',
     email: 'email',
     password: 'пароль | пароли',
+  },
+  validate: {
+    notEmail: 'Неправильный формат email'
   }
 };
 
