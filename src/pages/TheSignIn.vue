@@ -19,8 +19,8 @@ import TheSignInStandardForm from 'components/TheSignInStandardForm.vue';
 })
 export default class SignInPage extends Vue {
   // TODO: SignIn
-  signIn (): void {
+  /*signIn (): void {
 
-  }
+  }*/
 };
 </script>

@@ -41,8 +41,8 @@ export default class SignUpPage extends Vue {
     this.credential = fields;
   }
   // TODO: SignUp
-  signUp (): void {
+  /*signUp (): void {
 
-  }
+  }*/
 };
 </script>

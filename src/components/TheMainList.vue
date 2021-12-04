@@ -1,6 +1,7 @@
 <template>
-  <div style="width: 100vw; height: 100vh">
-    MainMap
+  <div>
+    <slot name="search"/>
+    <slot name="filter"/>
   </div>
 </template>
 
@@ -11,7 +12,7 @@ import Alert from 'quasar-app-extension-offline-ui/src/components/Alert/Alert.vu
 @Options({
   components: {Alert}
 })
-export default class MainMapPage extends Vue {
+export default class MainListPage extends Vue {
 
 };
 </script>
